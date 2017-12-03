@@ -18,4 +18,4 @@ ENV HOMER="Hiiiiiiiiiiiiiiii sekhar"
 #RUN mvn clean package
 
 # Run app.py when the container launches
-CMD ["java","-jar","target/hello-springboot-1.3.5.RELEASE.jar"]
+CMD ["java","-jar","target/DockerDeployment-1.3.5.RELEASE.jar"]
