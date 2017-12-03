@@ -17,7 +17,7 @@ public class HelloController {
         private String project_name;
 
 
-    @RequestMapping("/hello")
+    @RequestMapping("/")
     public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
     	model.addAttribute("project_name", project_name);
     	model.addAttribute("port_no", port_no);	
