@@ -5,16 +5,15 @@ FROM java:8-jre
 #FROM docker:17.11.0-ce
 
 # Set the working directory to /app
-WORKDIR /workflowte
+WORKDIR /dockerdeploy
 
 # Copy the current directory contents into the container at /app
-ADD . /workflowte
+ADD . /dockerdeploy
 
 # Make port 80 available to the world outside this container
 EXPOSE 8080
-EXPOSE 8122
 
-ENV HOMER="Hiiiiiiiiiiiiiiii sekhar"
+#ENV HOMER="Hiiiiiiiiiiiiiiii sekhar"
 #RUN mvn clean package
 
 # Run app.py when the container launches

@@ -3,12 +3,9 @@ services:
   web:
     env_file: 
       - .env
-    environment:
-      WORDPRESS_DB_: ${ENV3}
-    image: uma:1
+    image: spyder:1
     build: ./
     ports:
       - 8080:8080
-      - 8122:8122
     
 
