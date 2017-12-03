@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Docker Deployment!</title>
+</head>
+<body>
+<h1>Docker deployment</h1>
+<h3 th:text="'Hello, ' + ${project_name}"></h3>
+    <p th:text="'Project is deployed on , ' + ${port_no} " />
+</body>
+</html>

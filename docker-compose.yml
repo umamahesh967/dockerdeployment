@@ -1,0 +1,14 @@
+version: "2"
+services:
+  web:
+    env_file: 
+      - .env
+    environment:
+      WORDPRESS_DB_: ${ENV3}
+    image: uma:1
+    build: ./
+    ports:
+      - 8080:8080
+      - 8122:8122
+    
+
